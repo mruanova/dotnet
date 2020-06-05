@@ -1,0 +1,12 @@
+/Users/mau/git/dotnet/Basic13/bin/Debug/netcoreapp3.1/Basic13.deps.json
+/Users/mau/git/dotnet/Basic13/bin/Debug/netcoreapp3.1/Basic13.runtimeconfig.json
+/Users/mau/git/dotnet/Basic13/bin/Debug/netcoreapp3.1/Basic13.runtimeconfig.dev.json
+/Users/mau/git/dotnet/Basic13/bin/Debug/netcoreapp3.1/Basic13.dll
+/Users/mau/git/dotnet/Basic13/bin/Debug/netcoreapp3.1/Basic13.pdb
+/Users/mau/git/dotnet/Basic13/obj/Debug/netcoreapp3.1/Basic13.csprojAssemblyReference.cache
+/Users/mau/git/dotnet/Basic13/obj/Debug/netcoreapp3.1/Basic13.AssemblyInfoInputs.cache
+/Users/mau/git/dotnet/Basic13/obj/Debug/netcoreapp3.1/Basic13.AssemblyInfo.cs
+/Users/mau/git/dotnet/Basic13/obj/Debug/netcoreapp3.1/Basic13.csproj.CoreCompileInputs.cache
+/Users/mau/git/dotnet/Basic13/obj/Debug/netcoreapp3.1/Basic13.dll
+/Users/mau/git/dotnet/Basic13/obj/Debug/netcoreapp3.1/Basic13.pdb
+/Users/mau/git/dotnet/Basic13/obj/Debug/netcoreapp3.1/Basic13.genruntimeconfig.cache
