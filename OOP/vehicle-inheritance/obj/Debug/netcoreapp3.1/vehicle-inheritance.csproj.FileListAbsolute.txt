@@ -1,0 +1,12 @@
+/Users/mau/git/dotnet/OOP/vehicle-inheritance/bin/Debug/netcoreapp3.1/vehicle-inheritance.deps.json
+/Users/mau/git/dotnet/OOP/vehicle-inheritance/bin/Debug/netcoreapp3.1/vehicle-inheritance.runtimeconfig.json
+/Users/mau/git/dotnet/OOP/vehicle-inheritance/bin/Debug/netcoreapp3.1/vehicle-inheritance.runtimeconfig.dev.json
+/Users/mau/git/dotnet/OOP/vehicle-inheritance/bin/Debug/netcoreapp3.1/vehicle-inheritance.dll
+/Users/mau/git/dotnet/OOP/vehicle-inheritance/bin/Debug/netcoreapp3.1/vehicle-inheritance.pdb
+/Users/mau/git/dotnet/OOP/vehicle-inheritance/obj/Debug/netcoreapp3.1/vehicle-inheritance.csprojAssemblyReference.cache
+/Users/mau/git/dotnet/OOP/vehicle-inheritance/obj/Debug/netcoreapp3.1/vehicle-inheritance.AssemblyInfoInputs.cache
+/Users/mau/git/dotnet/OOP/vehicle-inheritance/obj/Debug/netcoreapp3.1/vehicle-inheritance.AssemblyInfo.cs
+/Users/mau/git/dotnet/OOP/vehicle-inheritance/obj/Debug/netcoreapp3.1/vehicle-inheritance.csproj.CoreCompileInputs.cache
+/Users/mau/git/dotnet/OOP/vehicle-inheritance/obj/Debug/netcoreapp3.1/vehicle-inheritance.dll
+/Users/mau/git/dotnet/OOP/vehicle-inheritance/obj/Debug/netcoreapp3.1/vehicle-inheritance.pdb
+/Users/mau/git/dotnet/OOP/vehicle-inheritance/obj/Debug/netcoreapp3.1/vehicle-inheritance.genruntimeconfig.cache
