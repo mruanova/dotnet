@@ -1,4 +1,6 @@
-dot net c#/.net core
+# dot net c#/.net core
+
+## installation 
 
 brew install openssl
 
@@ -15,7 +17,7 @@ SDK Installer1
 .net framework 4.8
 https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/versions-and-dependencies#net-framework-48
 
-MAC OS:
+### MAC OS:
 dotnet --version
 3.1.300
 
@@ -26,7 +28,7 @@ sudo ./dotnet-uninstall-pkgs.sh
 
 install xcode? (ios)
 
-MYSQL?
+## MYSQL
 
 brew install mysql
 
@@ -45,7 +47,7 @@ https://www.farces.com/wrestling-with-the-mysql-8-0-11-bear/
 
 nano /usr/local/etc/my.cnf
 
-# Disable default caching_sha2_password
+### Disable default caching_sha2_password
 default-authentication-plugin=mysql_native_password
 
 mysql -u root -p
@@ -61,4 +63,3 @@ brew services restart mysql
 mkdir FirstCSharp
 cd FirstCSharp
 dotnet new console
-
