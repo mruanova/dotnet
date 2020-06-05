@@ -1,0 +1,12 @@
+/Users/mau/git/dotnet/Puzzles/bin/Debug/netcoreapp3.1/Puzzles.deps.json
+/Users/mau/git/dotnet/Puzzles/bin/Debug/netcoreapp3.1/Puzzles.runtimeconfig.json
+/Users/mau/git/dotnet/Puzzles/bin/Debug/netcoreapp3.1/Puzzles.runtimeconfig.dev.json
+/Users/mau/git/dotnet/Puzzles/bin/Debug/netcoreapp3.1/Puzzles.dll
+/Users/mau/git/dotnet/Puzzles/bin/Debug/netcoreapp3.1/Puzzles.pdb
+/Users/mau/git/dotnet/Puzzles/obj/Debug/netcoreapp3.1/Puzzles.csprojAssemblyReference.cache
+/Users/mau/git/dotnet/Puzzles/obj/Debug/netcoreapp3.1/Puzzles.AssemblyInfoInputs.cache
+/Users/mau/git/dotnet/Puzzles/obj/Debug/netcoreapp3.1/Puzzles.AssemblyInfo.cs
+/Users/mau/git/dotnet/Puzzles/obj/Debug/netcoreapp3.1/Puzzles.csproj.CoreCompileInputs.cache
+/Users/mau/git/dotnet/Puzzles/obj/Debug/netcoreapp3.1/Puzzles.dll
+/Users/mau/git/dotnet/Puzzles/obj/Debug/netcoreapp3.1/Puzzles.pdb
+/Users/mau/git/dotnet/Puzzles/obj/Debug/netcoreapp3.1/Puzzles.genruntimeconfig.cache
