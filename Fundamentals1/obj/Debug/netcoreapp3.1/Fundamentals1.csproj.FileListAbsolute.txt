@@ -1,0 +1,12 @@
+/Users/mau/git/dotnet/Fundamentals1/bin/Debug/netcoreapp3.1/Fundamentals1.deps.json
+/Users/mau/git/dotnet/Fundamentals1/bin/Debug/netcoreapp3.1/Fundamentals1.runtimeconfig.json
+/Users/mau/git/dotnet/Fundamentals1/bin/Debug/netcoreapp3.1/Fundamentals1.runtimeconfig.dev.json
+/Users/mau/git/dotnet/Fundamentals1/bin/Debug/netcoreapp3.1/Fundamentals1.dll
+/Users/mau/git/dotnet/Fundamentals1/bin/Debug/netcoreapp3.1/Fundamentals1.pdb
+/Users/mau/git/dotnet/Fundamentals1/obj/Debug/netcoreapp3.1/Fundamentals1.csprojAssemblyReference.cache
+/Users/mau/git/dotnet/Fundamentals1/obj/Debug/netcoreapp3.1/Fundamentals1.AssemblyInfoInputs.cache
+/Users/mau/git/dotnet/Fundamentals1/obj/Debug/netcoreapp3.1/Fundamentals1.AssemblyInfo.cs
+/Users/mau/git/dotnet/Fundamentals1/obj/Debug/netcoreapp3.1/Fundamentals1.csproj.CoreCompileInputs.cache
+/Users/mau/git/dotnet/Fundamentals1/obj/Debug/netcoreapp3.1/Fundamentals1.dll
+/Users/mau/git/dotnet/Fundamentals1/obj/Debug/netcoreapp3.1/Fundamentals1.pdb
+/Users/mau/git/dotnet/Fundamentals1/obj/Debug/netcoreapp3.1/Fundamentals1.genruntimeconfig.cache

@@ -1,0 +1,12 @@
+/Users/mau/git/dotnet/BoxingUnboxing/bin/Debug/netcoreapp3.1/BoxingUnboxing.deps.json
+/Users/mau/git/dotnet/BoxingUnboxing/bin/Debug/netcoreapp3.1/BoxingUnboxing.runtimeconfig.json
+/Users/mau/git/dotnet/BoxingUnboxing/bin/Debug/netcoreapp3.1/BoxingUnboxing.runtimeconfig.dev.json
+/Users/mau/git/dotnet/BoxingUnboxing/bin/Debug/netcoreapp3.1/BoxingUnboxing.dll
+/Users/mau/git/dotnet/BoxingUnboxing/bin/Debug/netcoreapp3.1/BoxingUnboxing.pdb
+/Users/mau/git/dotnet/BoxingUnboxing/obj/Debug/netcoreapp3.1/BoxingUnboxing.csprojAssemblyReference.cache
+/Users/mau/git/dotnet/BoxingUnboxing/obj/Debug/netcoreapp3.1/BoxingUnboxing.AssemblyInfoInputs.cache
+/Users/mau/git/dotnet/BoxingUnboxing/obj/Debug/netcoreapp3.1/BoxingUnboxing.AssemblyInfo.cs
+/Users/mau/git/dotnet/BoxingUnboxing/obj/Debug/netcoreapp3.1/BoxingUnboxing.csproj.CoreCompileInputs.cache
+/Users/mau/git/dotnet/BoxingUnboxing/obj/Debug/netcoreapp3.1/BoxingUnboxing.dll
+/Users/mau/git/dotnet/BoxingUnboxing/obj/Debug/netcoreapp3.1/BoxingUnboxing.pdb
+/Users/mau/git/dotnet/BoxingUnboxing/obj/Debug/netcoreapp3.1/BoxingUnboxing.genruntimeconfig.cache
