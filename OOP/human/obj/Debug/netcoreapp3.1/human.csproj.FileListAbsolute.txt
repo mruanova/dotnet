@@ -1,0 +1,12 @@
+/Users/mau/git/dotnet/OOP/human/bin/Debug/netcoreapp3.1/human.deps.json
+/Users/mau/git/dotnet/OOP/human/bin/Debug/netcoreapp3.1/human.runtimeconfig.json
+/Users/mau/git/dotnet/OOP/human/bin/Debug/netcoreapp3.1/human.runtimeconfig.dev.json
+/Users/mau/git/dotnet/OOP/human/bin/Debug/netcoreapp3.1/human.dll
+/Users/mau/git/dotnet/OOP/human/bin/Debug/netcoreapp3.1/human.pdb
+/Users/mau/git/dotnet/OOP/human/obj/Debug/netcoreapp3.1/human.csprojAssemblyReference.cache
+/Users/mau/git/dotnet/OOP/human/obj/Debug/netcoreapp3.1/human.AssemblyInfoInputs.cache
+/Users/mau/git/dotnet/OOP/human/obj/Debug/netcoreapp3.1/human.AssemblyInfo.cs
+/Users/mau/git/dotnet/OOP/human/obj/Debug/netcoreapp3.1/human.csproj.CoreCompileInputs.cache
+/Users/mau/git/dotnet/OOP/human/obj/Debug/netcoreapp3.1/human.dll
+/Users/mau/git/dotnet/OOP/human/obj/Debug/netcoreapp3.1/human.pdb
+/Users/mau/git/dotnet/OOP/human/obj/Debug/netcoreapp3.1/human.genruntimeconfig.cache
