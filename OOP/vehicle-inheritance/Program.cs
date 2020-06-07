@@ -8,7 +8,7 @@ namespace vehicle_inheritance
         // That's because our function will accept ANY collection of strings
         static void LoopingSomeWords(IEnumerable<string> someWords)
         {
-            foreach(var word in someWords)
+            foreach (var word in someWords)
             {
                 Console.WriteLine(word);
             }
@@ -16,11 +16,10 @@ namespace vehicle_inheritance
         static void Main(string[] args)
         {
             Console.WriteLine("Vehicle!");
-            Vehicle someVehicle = new Vehicle("Green");
-            Car someCar = new Car("Yellow", "Dodge", "Dart");
-            someVehicle.GetInfo();
-            someCar.GetInfo();
             // Vehicle someVehicle = new Vehicle("Green");
+            Car someCar = new Car("Yellow", "Dodge", "Dart");
+            // someVehicle.GetInfo();
+            someCar.GetInfo();
 
             // Constructing a Car "as a" Vehicle
             Vehicle carAsVehicle = new Car("Yellow", "Dodge", "Dart");
@@ -28,10 +27,10 @@ namespace vehicle_inheritance
             // Constructing a couple Cars
             // Car someCar = new Car("Red", "Toyota", "Corolla");
             Car someOtherCar = new Car("Purple", "Ford", "Fiesta");
-
+            someOtherCar.MakeNoise();
             // Constructing a Person, adding any Vehicle to their list of OwnedVehicles
             Person somePerson = new Person();
-            somePerson.AddToVehicles(someVehicle);
+            // somePerson.AddToVehicles(someVehicle);
             somePerson.AddToVehicles(carAsVehicle);
             somePerson.AddToVehicles(someCar);
             somePerson.AddToVehicles(someOtherCar);

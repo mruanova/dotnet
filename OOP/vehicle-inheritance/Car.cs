@@ -40,5 +40,12 @@ namespace vehicle_inheritance
             Console.WriteLine("... driving ...");
             DistanceTraveled += distance;
         }
+
+        // inherited "abstract" methods must be "overridden" by the child class
+        // the override keyword is used here, just like it is for overriding "virtual" parent methods
+        public override void MakeNoise()
+        {
+            Console.WriteLine("Beeeeep!");
+        }
     }
 }

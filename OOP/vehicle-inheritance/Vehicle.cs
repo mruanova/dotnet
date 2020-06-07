@@ -2,7 +2,7 @@ using System;
 
 namespace vehicle_inheritance
 {
-    class Vehicle
+    abstract class Vehicle
     {
         public int NumPassengers;
         public string Color;
@@ -30,5 +30,10 @@ namespace vehicle_inheritance
             Console.WriteLine($"Color: {Color}");
             Console.WriteLine($"Miles: {Odometer}");
         }
+
+        // "abstract" methods only take a method "signature", just like interfaces
+        // they also must be either "public" or "protected", as they need to be
+        // accessible to their child classes
+        public abstract void MakeNoise();
     }
 }
