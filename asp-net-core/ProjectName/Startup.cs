@@ -17,6 +17,8 @@ namespace ProjectName
         public void ConfigureServices(IServiceCollection services)
         {
             // services.AddMvc();
+            services.AddControllers();
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -26,16 +28,21 @@ namespace ProjectName
             {
                 app.UseDeveloperExceptionPage();
             }
+            // app.UseStaticFiles();
             // app.UseMvc();
-
             app.UseRouting();
-
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern:"{controller=Home}/{action=Index}");
+                endpoints.MapRazorPages();
+                /*
                 endpoints.MapGet("/", async context =>
                 {
                     await context.Response.WriteAsync("Hello World!");
                 });
+                */
             });
         }
     }

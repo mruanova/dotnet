@@ -1,0 +1,27 @@
+﻿#header_navbar {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+#title {
+    margin: 25px auto;
+}
+
+
+#profile_image {
+    width: 400px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#attr {
+    margin-top:20px !important;
+}
+.logo {
+    border:1px solid grey;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 300px;
+}

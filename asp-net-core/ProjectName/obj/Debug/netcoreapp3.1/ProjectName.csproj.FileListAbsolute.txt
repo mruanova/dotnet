@@ -28,3 +28,5 @@
 /Users/mau/git/dotnet/asp-net-core/ProjectName/obj/Debug/netcoreapp3.1/ProjectName.RazorTargetAssemblyInfo.cs
 /Users/mau/git/dotnet/asp-net-core/ProjectName/obj/Debug/netcoreapp3.1/ProjectName.Views.pdb
 /Users/mau/git/dotnet/asp-net-core/ProjectName/obj/Debug/netcoreapp3.1/ProjectName.csproj.CopyComplete
+/Users/mau/git/dotnet/asp-net-core/ProjectName/obj/Debug/netcoreapp3.1/Razor/Views/Home/Contact.cshtml.g.cs
+/Users/mau/git/dotnet/asp-net-core/ProjectName/obj/Debug/netcoreapp3.1/Razor/Views/Home/Projects.cshtml.g.cs
