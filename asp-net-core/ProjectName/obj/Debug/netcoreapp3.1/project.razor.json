@@ -20519,6 +20519,12 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "ProjectName",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "/Users/mau/git/dotnet/asp-net-core/ProjectName/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

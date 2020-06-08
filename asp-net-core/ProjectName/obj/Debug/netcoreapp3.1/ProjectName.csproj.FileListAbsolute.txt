@@ -17,3 +17,14 @@
 /Users/mau/git/dotnet/asp-net-core/ProjectName/obj/Debug/netcoreapp3.1/ProjectName.dll
 /Users/mau/git/dotnet/asp-net-core/ProjectName/obj/Debug/netcoreapp3.1/ProjectName.pdb
 /Users/mau/git/dotnet/asp-net-core/ProjectName/obj/Debug/netcoreapp3.1/ProjectName.genruntimeconfig.cache
+/Users/mau/git/dotnet/asp-net-core/ProjectName/bin/Debug/netcoreapp3.1/ProjectName.Views.dll
+/Users/mau/git/dotnet/asp-net-core/ProjectName/bin/Debug/netcoreapp3.1/ProjectName.Views.pdb
+/Users/mau/git/dotnet/asp-net-core/ProjectName/obj/Debug/netcoreapp3.1/ProjectName.RazorAssemblyInfo.cache
+/Users/mau/git/dotnet/asp-net-core/ProjectName/obj/Debug/netcoreapp3.1/ProjectName.RazorAssemblyInfo.cs
+/Users/mau/git/dotnet/asp-net-core/ProjectName/obj/Debug/netcoreapp3.1/ProjectName.TagHelpers.input.cache
+/Users/mau/git/dotnet/asp-net-core/ProjectName/obj/Debug/netcoreapp3.1/ProjectName.TagHelpers.output.cache
+/Users/mau/git/dotnet/asp-net-core/ProjectName/obj/Debug/netcoreapp3.1/ProjectName.RazorCoreGenerate.cache
+/Users/mau/git/dotnet/asp-net-core/ProjectName/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+/Users/mau/git/dotnet/asp-net-core/ProjectName/obj/Debug/netcoreapp3.1/ProjectName.RazorTargetAssemblyInfo.cs
+/Users/mau/git/dotnet/asp-net-core/ProjectName/obj/Debug/netcoreapp3.1/ProjectName.Views.pdb
+/Users/mau/git/dotnet/asp-net-core/ProjectName/obj/Debug/netcoreapp3.1/ProjectName.csproj.CopyComplete
