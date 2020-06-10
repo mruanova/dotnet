@@ -155,3 +155,16 @@ https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?v
 
 https://docs.microsoft.com/en-us/aspnet/core/migration/22-to-30?view=aspnetcore-2.2&tabs=visual-studio#update-routing-startup-code
 
+### Emmet with Razor
+```
+// Place your settings in this file to overwrite the default settings
+{
+    "emmet.excludeLanguages": [
+        "markdown"
+    ],
+    "emmet.includeLanguages": {
+        "aspnetcorerzor":"html",
+        "razor":"html"
+    }
+}
+```

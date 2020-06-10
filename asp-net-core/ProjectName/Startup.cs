@@ -28,7 +28,7 @@ namespace ProjectName
             {
                 app.UseDeveloperExceptionPage();
             }
-            // app.UseStaticFiles();
+            app.UseStaticFiles();
             // app.UseMvc();
             app.UseRouting();
             app.UseEndpoints(endpoints =>

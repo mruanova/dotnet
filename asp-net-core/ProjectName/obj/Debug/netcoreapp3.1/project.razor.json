@@ -20534,6 +20534,11 @@
       "FilePath": "/Users/mau/git/dotnet/asp-net-core/ProjectName/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/mau/git/dotnet/asp-net-core/ProjectName/Views/Home/Food.cshtml",
+      "TargetPath": "Views\\Home\\Food.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
