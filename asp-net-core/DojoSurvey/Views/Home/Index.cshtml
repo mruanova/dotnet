@@ -8,7 +8,25 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
-
 <p>Username: @ViewBag.Username</p>
 <p>FirstName: @Model.FirstName</p>
 <p>LastName: @Model.LastName</p>
+<form action="/result" method="post">
+    <label>Your Name:</label>
+    <input type="text" name="Name">
+    <label>Dojo Location:</label>
+    <select name="Location">
+        <option value="Chicago">Chicago</option>
+        <option value="California">California</option>
+        <option value="NewYork">NewYork</option>
+    </select>
+    <label>Favorite Language:</label>
+    <select name="Language">
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="CSharp">CSharp</option>
+    </select>
+    <label>Comment (optional):</label>
+    <input type="text" name="Comment">
+    <button>Submit</button>
+</form>

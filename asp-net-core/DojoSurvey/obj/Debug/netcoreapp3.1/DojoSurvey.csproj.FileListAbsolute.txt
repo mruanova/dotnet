@@ -34,3 +34,8 @@
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/DojoSurvey.pdb
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/DojoSurvey.genruntimeconfig.cache
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/DojoSurvey.csproj.CopyComplete
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/User/Register.cshtml.g.cs
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Student/Index.cshtml.g.cs
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Survey/Result.cshtml.g.cs
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/User/Index.cshtml.g.cs
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Student/List.cshtml.g.cs

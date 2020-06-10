@@ -20526,6 +20526,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/mau/git/dotnet/asp-net-core/DojoSurvey/Views/Student/List.cshtml",
+      "TargetPath": "Views\\Student\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/mau/git/dotnet/asp-net-core/DojoSurvey/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -20541,6 +20546,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/mau/git/dotnet/asp-net-core/DojoSurvey/Views/User/Index.cshtml",
+      "TargetPath": "Views\\User\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/mau/git/dotnet/asp-net-core/DojoSurvey/Views/Student/Index.cshtml",
+      "TargetPath": "Views\\Student\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/mau/git/dotnet/asp-net-core/DojoSurvey/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -20553,6 +20568,16 @@
     {
       "FilePath": "/Users/mau/git/dotnet/asp-net-core/DojoSurvey/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/mau/git/dotnet/asp-net-core/DojoSurvey/Views/User/Register.cshtml",
+      "TargetPath": "Views\\User\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/mau/git/dotnet/asp-net-core/DojoSurvey/Views/Survey/Result.cshtml",
+      "TargetPath": "Views\\Survey\\Result.cshtml",
       "FileKind": "mvc"
     }
   ],

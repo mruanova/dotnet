@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "User Page";
+}
+@using DojoSurvey.Models
+@model User
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<p>Username: @ViewBag.Username</p>
+<p>FirstName: @Model.FirstName</p>
+<p>LastName: @Model.LastName</p>
+<form action="/register" method="post">
+    <label>FirstName:</label>
+    <input type="text" name="FirstName">
+    <label>LastName:</label>
+    <input type="text" name="LastName">
+    <button>Submit</button>
+</form>

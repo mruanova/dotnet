@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using DojoSurvey.Models;
+
+namespace DojoSurvey.Controllers
+{
+    public class UserController : Controller
+    {
+        private readonly ILogger<UserController> _logger;
+
+        public UserController(ILogger<UserController> logger)
+        {
+            _logger = logger;
+        }
+
+        public IActionResult Index()
+        {
+            ViewBag.Username = "mruanova";
+            User mau = new User();
+            mau.FirstName = "Mauricio";
+            mau.LastName = "Ruanova";
+            return View(mau);
+        }
+
+        // other code ...
+        [HttpPost("register")]
+        public IActionResult Register(User user)
+        {
+            // process the form...
+            Console.WriteLine(user);
+            return View(user);
+        }
+    }
+}
