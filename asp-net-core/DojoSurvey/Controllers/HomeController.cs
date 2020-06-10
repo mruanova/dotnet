@@ -20,7 +20,11 @@ namespace DojoSurvey.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            ViewBag.Username = "mruanova";
+            User mau = new User();
+            mau.FirstName="Mauricio";
+            mau.LastName="Ruanova";
+            return View(mau);
         }
 
         public IActionResult Privacy()

@@ -99,9 +99,13 @@ To do this, simply add another line:
 
 ## Tip!
 
-Both _ViewStart and _ViewImports can be generated with the dotnet new command, with dotnet new viewimports and dotnet new viewstart. This is useful if you wish to start new projects with the more lightweight dotnet new web template. 
+Both _ViewStart and _ViewImports can be generated with the dotnet new command, with dotnet new viewimports and dotnet new viewstart. 
 
-These will be placed wherever you run the command from in your terminal - which more than likely, will be in your project's working directory. Since these files will want to go in your Views/ directory, you can use the -o flag to specify a location. 
+This is useful if you wish to start new projects with the more lightweight dotnet new web template. 
+
+These will be placed wherever you run the command from in your terminal - which more than likely, will be in your project's working directory. 
+
+Since these files will want to go in your Views/ directory, you can use the -o flag to specify a location. 
 
 So you can run:
 
