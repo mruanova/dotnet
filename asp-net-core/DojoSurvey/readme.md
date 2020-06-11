@@ -114,3 +114,17 @@ So you can run:
     dotnet new viewstart -o Views
 
 To place them in the appropriate directory.
+
+- Partials
+
+- Session
+
+### Routes
+
+https://localhost:5001/
+
+https://localhost:5001/user
+
+https://localhost:5001/student
+
+https://localhost:5001/survey

@@ -30,3 +30,11 @@
     <input type="text" name="Comment">
     <button>Submit</button>
 </form>
+<h2>Here are my Users!</h2>
+<ul>
+@foreach(var user in ViewBag.Users)
+{
+    <!-- Remember, these are Dictionaries - so you must use user["KeyName"] to access the values within -->
+    <li>@user["FirstName"] @user["LastName"]</li>
+}
+</ul>

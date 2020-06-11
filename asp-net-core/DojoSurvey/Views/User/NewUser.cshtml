@@ -1,0 +1,13 @@
+@model User
+<form asp-action="Create" asp-controller="Home" method="post">
+    <span asp-validation-for="Username"></span>
+    <label asp-for="Username"></label>
+    <input asp-for="Username">
+    <span asp-validation-for="Email"></span>
+    <label asp-for="Email"></label>
+    <input asp-for="Email">
+    <span asp-validation-for="Password"></span>
+    <label asp-for="Password"></label>
+    <input asp-for="Password">
+    <input value="Add User" type="submit">    
+</form>

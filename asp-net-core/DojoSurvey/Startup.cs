@@ -23,6 +23,8 @@ namespace DojoSurvey
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSession();    // add this line
+            // services.AddMvc(); // version 2
             services.AddControllersWithViews();
         }
 
@@ -52,6 +54,8 @@ namespace DojoSurvey
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+            app.UseSession();    // add this line
+            // app.UseMvc();        // make sure UseMvc comes last!!
         }
     }
 }

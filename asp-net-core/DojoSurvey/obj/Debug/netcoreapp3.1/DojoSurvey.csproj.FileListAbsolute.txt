@@ -39,3 +39,10 @@
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Survey/Result.cshtml.g.cs
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/User/Index.cshtml.g.cs
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Student/List.cshtml.g.cs
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/User/NewUser.cshtml.g.cs
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/bin/Debug/netcoreapp3.1/BouncyCastle.Crypto.dll
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/bin/Debug/netcoreapp3.1/Google.Protobuf.dll
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/bin/Debug/netcoreapp3.1/MySql.Data.dll
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll

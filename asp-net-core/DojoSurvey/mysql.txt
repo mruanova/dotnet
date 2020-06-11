@@ -1,0 +1,24 @@
+// #In terminal after navigating to your project directory, run the following commandscopy
+// dotnet add package MySql.Data -v 8.0
+
+mysql -u root -p
+
+show databases;
+
+use friendsdb;
+
+describe users;
+
+INSERT INTO friends (Name) VALUES ("mau");
+
+
+
+
+<h1>Here are my Users!</h1>
+<ul>
+@foreach(var user in ViewBag.Users)
+{
+    <!-- Remember, these are Dictionaries - so you must use user["KeyName"] to access the values within -->
+    <li>@user["FirstName"] @user["LastName"]</li>
+}
+</ul>
