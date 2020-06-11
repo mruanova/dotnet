@@ -8,9 +8,15 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<partial name="NavPartial"/>
+<h1>Welcome to this site!</h1>
+<p>The rest of your View content here...</p>
+
 <p>Username: @ViewBag.Username</p>
 <p>FirstName: @Model.FirstName</p>
 <p>LastName: @Model.LastName</p>
+
 <form action="/result" method="post">
     <label>Your Name:</label>
     <input type="text" name="Name">
@@ -30,6 +36,7 @@
     <input type="text" name="Comment">
     <button>Submit</button>
 </form>
+
 <h2>Here are my Users!</h2>
 <ul>
 @foreach(var user in ViewBag.Users)

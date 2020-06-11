@@ -20541,6 +20541,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/mau/git/dotnet/asp-net-core/DojoSurvey/Views/Home/NavPartial.cshtml",
+      "TargetPath": "Views\\Home\\NavPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/mau/git/dotnet/asp-net-core/DojoSurvey/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"

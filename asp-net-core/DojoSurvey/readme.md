@@ -74,7 +74,7 @@ The _Layout.cshtml file that our mvc template generates for us looks something l
 ```
 Take special notice of the @RenderBody() line. Whenever our app returns a View, it first renders this layout file, then our view file is rendered in place of @RenderBody() . Because of this our views never need their own <html>, <head>, or <body> tags and also don't need their own link to our site.css . We can also modify _Layout.cshtml to include any elements that we want to appear on every page of our app, like a Header or a link to the Home page.
 
-ViewStart
+### ViewStart
 In the Views folder of our generated project there is a file called _ViewStart.cshtml . 
 
 This ViewStart file is run before any view is rendered. When our mvc template generates this file all it does is ensure that the default Layout is used by all views. 
@@ -83,7 +83,7 @@ You may have as many layout files as you wish, for example maybe you want views 
 
 You can add a ViewStart file to Views/Dashboard, and set Layout to a Layout file that has a navbar. ASP's view-finding system will prioritize views in a controller's view directory over Shared/, so you won't have to worry about conflicting with the master Layout in Views/Shared.
 
-ViewImports
+### ViewImports
 Alongside the ViewStart file you should also find a file called _ViewImports.cshtml . 
 
 ViewImports is used to import any additional packages or namespaces that are needed by multiple views. 
@@ -114,10 +114,6 @@ So you can run:
     dotnet new viewstart -o Views
 
 To place them in the appropriate directory.
-
-- Partials
-
-- Session
 
 ### Routes
 
