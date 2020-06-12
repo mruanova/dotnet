@@ -12,24 +12,26 @@ namespace DojoSurvey.Factory
     public class CarFactory
     {
         private MySqlOptions _options;
-        /*
+        
         public CarFactory(IOptions<MySqlOptions> config)
         {
             _options = config.Value;
         }
-        */
+        
         internal IDbConnection Connection
         {
             get
             {
+                /*
                 string server = "localhost";
                 string db = "mydb"; //Change to your schema name
                 string port = "3306"; //Potentially 8889
                 string user = "root";
                 string pass = "root";
                 string connectionString = $"Server={server};Port={port};Database={db};UserID={user};Password={pass};SslMode=None";
-                // return new MySqlConnection(_options.ConnectionString);
                 return new MySqlConnection(connectionString);
+                */ 
+                return new MySqlConnection(_options.ConnectionString);
             }
         }
 

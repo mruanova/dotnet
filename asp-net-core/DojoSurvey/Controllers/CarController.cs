@@ -16,12 +16,11 @@ namespace DojoSurvey.Controllers
 
         private readonly CarFactory _carFactory;
 
-        // public CarController(ILogger<CarController> logger, CarFactory uFactory)
-        public CarController(ILogger<CarController> logger)
+        public CarController(ILogger<CarController> logger, CarFactory uFactory)
         {
             _logger = logger;
-            // _carFactory = uFactory;
-            _carFactory = new CarFactory();
+            _carFactory = uFactory;
+            // _carFactory = new CarFactory();
         }
 
         public IActionResult Index()

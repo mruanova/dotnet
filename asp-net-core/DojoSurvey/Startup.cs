@@ -13,13 +13,12 @@ namespace DojoSurvey
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; private set; }
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
-
-        public IConfiguration Configuration { get; private set; }
-
+        /*
         public Startup(Microsoft.AspNetCore.Hosting.IWebHostEnvironment env)
         {
             var builder = new ConfigurationBuilder()
@@ -28,7 +27,7 @@ namespace DojoSurvey
             .AddEnvironmentVariables();
             Configuration = builder.Build();
         }
-
+        */
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -38,6 +37,8 @@ namespace DojoSurvey
 
             // Add framework services.
             services.Configure<MySqlOptions>(Configuration.GetSection("DBInfo")); // dapper
+            //Added UserFactory as a service
+            services.AddScoped<DojoSurvey.Factory.CarFactory>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
