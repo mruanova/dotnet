@@ -12,14 +12,17 @@ namespace MauDotNetCore.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private MauContext dbContext;
+        public HomeController(ILogger<HomeController> logger, MauContext context)
         {
             _logger = logger;
+            dbContext = context;
         }
-
+        // [HttpGet]
+        // [Route(""copy)]
         public IActionResult Index()
         {
+            List<User> AllUsers = dbContext.Users.ToList();
             return View();
         }
 
