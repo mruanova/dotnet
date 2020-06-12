@@ -50,8 +50,15 @@ namespace MauDotNetCore.Controllers
             return View();
         }
 
-        [HttpPost("/submit")]
-        public IActionResult Submit(LoginUser userSubmission)
+        [HttpGet]
+        [Route("success")]
+        public IActionResult Success()
+        {
+            return View("Index");
+        }
+
+        [HttpPost("success")]
+        public IActionResult Success(LoginUser userSubmission)
         {
             if (ModelState.IsValid)
             {
@@ -107,7 +114,7 @@ namespace MauDotNetCore.Controllers
                     dbContext.Add(user);
                     // OR dbContext.Users.Add(newUser);
                     dbContext.SaveChanges();
-                    return View("Submit", user);
+                    return View("Success", user);
                 }
             }
             return View("Index", user);
