@@ -20526,6 +20526,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/mau/git/dotnet/asp-net-core/MauDotNetCore/Views/Home/Login.cshtml",
+      "TargetPath": "Views\\Home\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/mau/git/dotnet/asp-net-core/MauDotNetCore/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -20533,6 +20538,11 @@
     {
       "FilePath": "/Users/mau/git/dotnet/asp-net-core/MauDotNetCore/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/mau/git/dotnet/asp-net-core/MauDotNetCore/Views/Shared/NavPartial.cshtml",
+      "TargetPath": "Views\\Shared\\NavPartial.cshtml",
       "FileKind": "mvc"
     },
     {
