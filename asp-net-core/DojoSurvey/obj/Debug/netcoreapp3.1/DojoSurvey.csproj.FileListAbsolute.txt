@@ -36,9 +36,7 @@
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/DojoSurvey.csproj.CopyComplete
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/User/Register.cshtml.g.cs
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Student/Index.cshtml.g.cs
-/Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Survey/Result.cshtml.g.cs
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/User/Index.cshtml.g.cs
-/Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Student/List.cshtml.g.cs
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/User/NewUser.cshtml.g.cs
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/bin/Debug/netcoreapp3.1/BouncyCastle.Crypto.dll
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/bin/Debug/netcoreapp3.1/Google.Protobuf.dll
@@ -48,6 +46,8 @@
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/bin/Debug/netcoreapp3.1/Dapper.dll
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Shared/NavPartial.cshtml.g.cs
-/Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Car/Show.cshtml.g.cs
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Survey/Index.cshtml.g.cs
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/User/Users.cshtml.g.cs
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Car/Cars.cshtml.g.cs
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Survey/Surveys.cshtml.g.cs
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Student/Students.cshtml.g.cs

@@ -22,6 +22,90 @@ namespace DojoSurvey.Controllers
 
         public IActionResult Index()
         {
+            Product[] myProducts = new Product[]
+            {
+                new Product { Name = "Jeans", Category = "Clothing", Price = 24.7 },
+                new Product { Name = "Socks", Category = "Clothing", Price = 8.12 },
+                new Product { Name = "Scooter", Category = "Vehicle", Price = 99.99 },
+                new Product { Name = "Skateboard", Category = "Vehicle", Price = 24.99 },
+                new Product { Name = "Skirt", Category = "Clothing", Price = 17.5 }
+            };
+            Console.WriteLine(myProducts);
+            // sort
+            // The lambda here uses a variable 'prod' which represents a product 
+            // (although this may be named whatever you like)  
+            //  The right hand side of the arrow is selecting Price as the thing we want to order by.
+            IEnumerable<Product> orderedProducts = myProducts.OrderByDescending(prod => prod.Price);
+            Console.WriteLine(orderedProducts);
+            // filter
+            // Each "Product" in the array will be tested to see if its Category property matches the string "Clothing"
+            // If it matches (if the bool returns true) it will "pass the test" and be included in the result
+            IEnumerable<Product> justClothings = myProducts.Where(prod => prod.Category == "Clothing");
+            Console.WriteLine(justClothings);
+            // first or default
+            Product justJeans = myProducts.FirstOrDefault(prod => prod.Name == "Jeans");
+            Console.WriteLine(justJeans);
+            // FirstOrDefault can be used with no argument, as well, which will just retrieve the first item in the collection
+            Product firstOne = myProducts.FirstOrDefault();
+            Console.WriteLine(firstOne);
+            // select
+            IEnumerable<string> justCategories = myProducts.Select(prod => prod.Category);
+            Console.WriteLine(justCategories);
+
+            // min max sum
+            int[] numbers = new int[] { 12, 4, 5, 2, 5, -1 };
+            int smallestNum = numbers.Min();
+            int largestNum = numbers.Max();
+            int sumOfNums = numbers.Sum();
+            // Ok, this makes sense for integers, but what about the .Sum of a Product?
+            // You can use a "selector" lambda as an overload for these methods to determine how something like .Sum could be calculated
+            double sumOfProductPrice = myProducts.Sum(prod => prod.Price);
+
+            // to list / to array
+            List<Product> highTicketItemList = myProducts.Where(p => p.Price > 100).ToList();
+            Product[] orderedProductArray = myProducts
+                 .Where(p => p.Category == "Clothing")
+                 .OrderBy(p => p.Price)
+                 .ToArray();
+
+            // join
+            List<string> Food = new List<string>
+            {
+                "apple",
+                "banana",
+                "carrot",
+                "fudge",
+                "tomato"
+            };
+            List<string> Adjective = new List<string>
+            {
+                "tasty",
+                "capital",
+                "best",
+                "typical",
+                "flavorful",
+                "toothsome"
+            };
+
+            // each string in the Food list will be combined with each adjective from the Adjective list where their first characters match
+            IEnumerable<string> Alliterations = Food.Join(Adjective,
+                foodItem => foodItem[0],
+                adjective => adjective[0],
+                (foodItem, adjective) =>
+                {
+                    return adjective + " " + foodItem;
+                });
+
+            //Combo:   "best banana",
+            //         "capital carrot",
+            //         "flavorful fudge",
+            //         "tasty tomato",
+            //         "typical tomato",
+            //         "toothsome tomato"
+
+            // Notice that apple is not in the combination collection because it does not match an adjective, but tomato occurs three times because it matched three different adjectives
+
+            // session
             /*
             // *Inside controller methods*
             // To store a string in session we use ".SetString"
@@ -44,28 +128,7 @@ namespace DojoSurvey.Controllers
             mau.LastName = "Ruanova";
             return View(mau);
         }
-        /*
-        // Get One User
-        [HttpGet]
-        [Route("{userId}")]
-        public IActionResult Show(int userId)
-        {
-            // One user will be represented as an item in the list of dictionaries, shown here by indexing 0
-            Dictionary<string, object> User = DbConnector.Query($"SELECT * FROM users WHERE id = {userId}")[0];
-            // Other code
-        }
 
-        // Create a User
-        [HttpPost]
-        [Route("create")]
-        public IActionResult Create(User user)
-        {
-            // other code
-            string query = $"INSERT INTO users (FirstName, LastName) VALUES ('{user.FirstName}', '{user.LastName}')";
-            DbConnector.Execute(query);
-            // other code
-        }
-        */
         public IActionResult Privacy()
         {
             return View();

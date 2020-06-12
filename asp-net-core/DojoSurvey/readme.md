@@ -69,3 +69,30 @@ Include a check for Antiforgery Token and add it to your forms or use tag helper
 Make use of the bind keyword for post routes as to avoid "re-posting"
 
 Make sure users have proper permissions to any sensitive routes on your site (admin pages) they may access or else immediately display a 404 status error
+
+## LINQ
+### All/Any
+	var numbers = new[]{1,2,3};
+	numbers.All(n => n % 2 == 0); // returns false
+	numbers.Any(n => n % 2 == 0); // returns true
+### Contains
+### Count
+### First/Last
+    Product justJeans = myProducts.FirstOrDefault(prod => prod.Name == "Jeans");
+### Min/Max/Sum
+	int smallestNum = numbers.Min();
+	int largestNum = numbers.Max();
+	int sumOfNums = numbers.Sum();
+### OrderBy
+IEnumerable<Product> orderedProducts = myProducts.OrderByDescending(prod => prod.Price);
+### Reverse
+### Select
+IEnumerable<string> justCategories = myProducts.Select(prod => prod.Category);
+### Take
+### ToArray/ToList
+	Product[] orderedProductArray = myProducts
+			.Where(p => p.Category == "Clothing")
+			.OrderBy(p => p.Price)
+			.ToArray();
+### Where
+    IEnumerable<Product> justClothings = myProducts.Where(prod => prod.Category == "Clothing");

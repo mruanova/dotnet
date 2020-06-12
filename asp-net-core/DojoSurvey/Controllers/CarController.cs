@@ -32,8 +32,8 @@ namespace DojoSurvey.Controllers
             return View(mau);
         }
 
-        [HttpGet("show")]
-        public IActionResult Show(Car car)
+        [HttpGet("cars")]
+        public IActionResult Cars(Car car)
         {
             ViewBag.Cars = _carFactory.FindAll();
             // List<Car> cars = _carFactory.FindAll();

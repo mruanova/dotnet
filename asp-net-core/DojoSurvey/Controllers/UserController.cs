@@ -27,11 +27,9 @@ namespace DojoSurvey.Controllers
             return View(mau);
         }
 
-        // other code ...
         [HttpPost("register")]
         public IActionResult Register(User user)
         {
-            // process the form...
             Console.WriteLine(user);
             return View(user);
         }
