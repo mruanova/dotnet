@@ -98,6 +98,12 @@ namespace MauDotNetCore.Controllers
                 {
                     PasswordHasher<User> Hasher = new PasswordHasher<User>();
                     user.Password = Hasher.HashPassword(user, user.Password);
+
+                    var maxItem =
+                               dbContext.Users.OrderByDescending(i => i.UserId).FirstOrDefault();
+                    var newID = maxItem == null ? 1 : maxItem.UserId + 1;
+                    user.UserId = newID; // auto generate
+
                     dbContext.Add(user);
                     // OR dbContext.Users.Add(newUser);
                     dbContext.SaveChanges();
