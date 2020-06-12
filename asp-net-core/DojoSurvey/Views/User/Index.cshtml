@@ -4,10 +4,9 @@
 @using DojoSurvey.Models
 @model User
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<partial name="NavPartial"/>
+<h2>User</h2>
+
 <p>Username: @ViewBag.Username</p>
 <p>FirstName: @Model.FirstName</p>
 <p>LastName: @Model.LastName</p>

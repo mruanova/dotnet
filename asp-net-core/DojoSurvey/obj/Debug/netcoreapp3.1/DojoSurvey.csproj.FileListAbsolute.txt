@@ -46,4 +46,6 @@
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
-/Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Home/NavPartial.cshtml.g.cs
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/bin/Debug/netcoreapp3.1/Dapper.dll
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Shared/NavPartial.cshtml.g.cs
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Car/Show.cshtml.g.cs

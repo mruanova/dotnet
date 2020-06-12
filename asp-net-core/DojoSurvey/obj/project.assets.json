@@ -4845,7 +4845,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Dapper >= *",
+      "Dapper >= 2.0.35",
       "MySql.Data >= 8.0.16"
     ]
   },
@@ -4890,7 +4890,7 @@
         "dependencies": {
           "Dapper": {
             "target": "Package",
-            "version": "[*, )"
+            "version": "[2.0.35, )"
           },
           "MySql.Data": {
             "target": "Package",

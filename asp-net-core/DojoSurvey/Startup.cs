@@ -18,14 +18,26 @@ namespace DojoSurvey
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        public IConfiguration Configuration { get; private set; }
+
+        public Startup(Microsoft.AspNetCore.Hosting.IWebHostEnvironment env)
+        {
+            var builder = new ConfigurationBuilder()
+            .SetBasePath(env.ContentRootPath)
+            .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+            .AddEnvironmentVariables();
+            Configuration = builder.Build();
+        }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSession();    // add this line
+            services.AddSession(); // add this line
             // services.AddMvc(); // version 2
             services.AddControllersWithViews();
+
+            // Add framework services.
+            services.Configure<MySqlOptions>(Configuration.GetSection("DBInfo")); // dapper
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
