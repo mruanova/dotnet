@@ -20521,6 +20521,11 @@
   "RootNamespace": "MauDotNetCore",
   "Documents": [
     {
+      "FilePath": "/Users/mau/git/dotnet/asp-net-core/MauDotNetCore/Views/Home/Submit.cshtml",
+      "TargetPath": "Views\\Home\\Submit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/mau/git/dotnet/asp-net-core/MauDotNetCore/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"

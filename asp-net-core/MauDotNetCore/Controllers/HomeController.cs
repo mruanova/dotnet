@@ -45,7 +45,13 @@ namespace MauDotNetCore.Controllers
 
         [HttpGet]
         [Route("/login")]
-        public IActionResult Login(LoginUser userSubmission)
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost("/submit")]
+        public IActionResult Submit(LoginUser userSubmission)
         {
             if (ModelState.IsValid)
             {
