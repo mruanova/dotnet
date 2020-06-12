@@ -1,4 +1,3 @@
-
 using System.Collections.Generic;
 using System.Linq;
 using Dapper;
@@ -39,7 +38,7 @@ namespace DojoSurvey.Factory
         {
             using (IDbConnection dbConnection = Connection)
             {
-                string query = "INSERT INTO users (user_name, email, password, created_at, updated_at) VALUES (@Name, @Email, @Password, NOW(), NOW())";
+                string query = "INSERT INTO cars (user_name, email, password, created_at, updated_at) VALUES (@Name, @Email, @Password, NOW(), NOW())";
                 dbConnection.Open();
                 dbConnection.Execute(query, item); // dapper
             }
@@ -58,7 +57,7 @@ namespace DojoSurvey.Factory
             using (IDbConnection dbConnection = Connection)
             {
                 dbConnection.Open();
-                return dbConnection.Query<Car>("SELECT * FROM users WHERE id = @Id", new { Id = id }).FirstOrDefault();
+                return dbConnection.Query<Car>("SELECT * FROM cars WHERE id = @Id", new { Id = id }).FirstOrDefault();
             }
         }
     }
