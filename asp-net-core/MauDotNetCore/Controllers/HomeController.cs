@@ -24,15 +24,18 @@ namespace MauDotNetCore.Controllers
         {
             // Get all Users
             List<User> AllUsers = dbContext.Users.ToList();
-    
+            Console.WriteLine(AllUsers);
+
 			// Get Users with the LastName "Jefferson"
-			List<User> Jeffersons = dbContext.Users.Where(u => u.LastName == "Jefferson").ToList();
-            
+			List<User> mau = dbContext.Users.Where(u => u.LastName == "rua").ToList();
+            Console.WriteLine(mau);
+
     		// Get the 5 most recently added Users
             List<User> MostRecent = dbContext.Users
     			.OrderByDescending(u => u.CreatedAt)
     			.Take(5)
     			.ToList();
+            Console.WriteLine(MostRecent);
 
             return View();
         }
