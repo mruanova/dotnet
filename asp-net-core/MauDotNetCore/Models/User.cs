@@ -9,7 +9,7 @@ namespace MauDotNetCore.Models
         // auto-implemented properties need to match the columns in your table
         // the [Key] attribute is used to mark the Model property being used for your table's Primary Key
         [Key]
-        public int UserId { get; set; }
+        public int UserId { get; set; } = 1;
         [Required]
         public string FirstName { get; set; }
         [Required]
@@ -18,7 +18,8 @@ namespace MauDotNetCore.Models
         [Required]
         public string Email { get; set; }
         [DataType(DataType.Password)]
-        [Required]
+        [Required(ErrorMessage = "Please enter your password")]
+        [Display(Name = "Password")]
         [MinLength(8, ErrorMessage = "Password must be 8 characters or longer!")]
         public string Password { get; set; }
 

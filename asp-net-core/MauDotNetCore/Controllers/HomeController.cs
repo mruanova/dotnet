@@ -101,9 +101,10 @@ namespace MauDotNetCore.Controllers
                     dbContext.Add(user);
                     // OR dbContext.Users.Add(newUser);
                     dbContext.SaveChanges();
+                    return View("Submit", user);
                 }
             }
-            return View();
+            return View("Index", user);
         }
 
         [HttpGet("update/{userId}")]
