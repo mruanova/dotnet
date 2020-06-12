@@ -22,7 +22,18 @@ namespace MauDotNetCore.Controllers
         // [Route(""copy)]
         public IActionResult Index()
         {
+            // Get all Users
             List<User> AllUsers = dbContext.Users.ToList();
+    
+			// Get Users with the LastName "Jefferson"
+			List<User> Jeffersons = dbContext.Users.Where(u => u.LastName == "Jefferson").ToList();
+            
+    		// Get the 5 most recently added Users
+            List<User> MostRecent = dbContext.Users
+    			.OrderByDescending(u => u.CreatedAt)
+    			.Take(5)
+    			.ToList();
+
             return View();
         }
 
