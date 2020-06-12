@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BguRWbVbnf94xatSwQuHlhjd3EJeMNxKG/jZG48NO0ESNMoGDjajQMIxYRySYPtyUpbGeODDncOfmhN4J2Grxg==",
+  "dgSpecHash": "6Gq4MuucnWR1b/z/ovpmwRbM3PtkVoVqfR8eCyTd2H2gbI9eFgSOnwXuGQ6PMOtf3fWra++nIux0fLJ4Fi9+7g==",
   "success": true,
   "projectFilePath": "/Users/mau/git/dotnet/asp-net-core/DojoSurvey/DojoSurvey.csproj",
   "expectedPackageFiles": [
