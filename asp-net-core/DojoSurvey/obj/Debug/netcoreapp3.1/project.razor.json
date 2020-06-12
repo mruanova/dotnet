@@ -20586,6 +20586,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/mau/git/dotnet/asp-net-core/DojoSurvey/Views/Survey/Index.cshtml",
+      "TargetPath": "Views\\Survey\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/mau/git/dotnet/asp-net-core/DojoSurvey/Views/User/Users.cshtml",
+      "TargetPath": "Views\\User\\Users.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/mau/git/dotnet/asp-net-core/DojoSurvey/Views/User/Register.cshtml",
       "TargetPath": "Views\\User\\Register.cshtml",
       "FileKind": "mvc"

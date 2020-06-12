@@ -49,3 +49,5 @@
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/bin/Debug/netcoreapp3.1/Dapper.dll
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Shared/NavPartial.cshtml.g.cs
 /Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Car/Show.cshtml.g.cs
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/Survey/Index.cshtml.g.cs
+/Users/mau/git/dotnet/asp-net-core/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/User/Users.cshtml.g.cs

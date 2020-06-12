@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using DojoSurvey.Models
+@model Survey
+
+<partial name="NavPartial"/>
+<h2>Surveys</h2>
+
+<p>Username: @ViewBag.Username</p>
+<p>Name: @Model.Name</p>
+<p>Location: @Model.Location</p>
+<p>Language: @Model.Language</p>
+
+<form action="/result" method="post">
+    <label>Your Name:</label>
+    <input type="text" name="Name">
+    <label>Dojo Location:</label>
+    <select name="Location">
+        <option value="Chicago">Chicago</option>
+        <option value="California">California</option>
+        <option value="NewYork">NewYork</option>
+    </select>
+    <label>Favorite Language:</label>
+    <select name="Language">
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="CSharp">CSharp</option>
+    </select>
+    <label>Comment (optional):</label>
+    <input type="text" name="Comment">
+    <button>Submit</button>
+</form>
