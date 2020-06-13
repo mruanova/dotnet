@@ -9,5 +9,8 @@ namespace MauDotNetCore.Models
 
         // "users" table is represented by this DbSet "Users"
         public DbSet<User> Users { get; set; }
+        
+        // "sessages" table is represented by this DbSet "Messages"
+        public DbSet<Message> Messages { get; set; }
     }
 }

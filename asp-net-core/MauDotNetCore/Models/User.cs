@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -6,8 +7,6 @@ namespace MauDotNetCore.Models
 {
     public class User
     {
-        // auto-implemented properties need to match the columns in your table
-        // the [Key] attribute is used to mark the Model property being used for your table's Primary Key
         [Key]
         public int UserId { get; set; } = 1;
         [Required]
@@ -25,10 +24,14 @@ namespace MauDotNetCore.Models
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
+
         // Will not be mapped to your users table!
         [NotMapped]
         [Compare("Password")]
         [DataType(DataType.Password)]
         public string Confirm { get; set; }
+
+        // Navigation property for related Message objects
+        public List<Message> CreatedMessages { get; set; }
     }
 }

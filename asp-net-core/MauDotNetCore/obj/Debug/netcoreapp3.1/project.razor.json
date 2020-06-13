@@ -20566,8 +20566,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/mau/git/dotnet/asp-net-core/MauDotNetCore/Views/Home/Message/Index.cshtml",
+      "TargetPath": "Views\\Home\\Message\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/mau/git/dotnet/asp-net-core/MauDotNetCore/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/mau/git/dotnet/asp-net-core/MauDotNetCore/Views/Home/Message/Messages.cshtml",
+      "TargetPath": "Views\\Home\\Message\\Messages.cshtml",
       "FileKind": "mvc"
     }
   ],
