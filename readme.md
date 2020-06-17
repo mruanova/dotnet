@@ -1,65 +1,70 @@
-# dot net c#/.net core
+# mau dot net core
 
-## installation 
+    dotnet new mvc  --no-https -o MauDotNetCore
 
-brew install openssl
+## entity framework core
 
-Error: openssl@1.1 1.1.0f is already installed
-To upgrade to 1.1.1g, run `brew upgrade openssl@1.1`
+    dotnet add package Pomelo.EntityFrameworkCore.MySql -v 2.2.0
 
-ln -s /usr/local/opt/openssl/lib/libcrypto.1.0.0.dylib /usr/local/lib/
-ln -s /usr/local/opt/openssl/lib/libssl.1.0.0.dylib /usr/local/lib/
+    dotnet add package Pomelo.EntityFrameworkCore.MySql 
 
-2.2.5 version of .NET Core (not 3)
-https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2.5/2.2.5-download.md
-SDK Installer1
+    dotnet tool install --global dotnet-ef
 
-.net framework 4.8
-https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/versions-and-dependencies#net-framework-48
+    dotnet add package Microsoft.EntityFrameworkCore.Design
 
-### MAC OS:
-dotnet --version
-3.1.300
+## Code First Database Creation
 
-UNINSTALL:
-curl -O https://raw.githubusercontent.com/dotnet/cli/master/scripts/obtain/uninstall/dotnet-uninstall-pkgs.sh
-chmod u+x dotnet-uninstall-pkgs.sh
-sudo ./dotnet-uninstall-pkgs.sh
+Up until now, we've had to manually create our databases to match our models. 
+But Entity Framework provides us with a tool that allows us to create database tables directly from our models! 
+EF can read our model files to create "migrations", files that contain instructions for the database to create or modify tables.
 
-install xcode? (ios)
+### Migrations
+Migrations are an extremely powerful tool for interacting with your database.  
+Any time we change our models we can create new migrations to update the database accordingly, but be warned, you may have to delete your existing table data if it doesn't conform to the new model structure.
 
-## MYSQL
+Migrations are created using the Entity Framework command line tools. From the console we can create migrations like so:
 
-brew install mysql
+    dotnet ef migrations add YourMigrationName
 
-brew services start mysql
+Let's create an initial migration:
+    
+    dotnet ef migrations add InitialCreate
 
-mysql -u root -p
-(this assumes you have an administrative user "root" with a password of "root").
+After this code finishes executing you should see a new folder called "Migrations":
 
-show databases;
+With the migration file created, all that's left is to apply it to the database. We do this with another console command:
 
-use [database_name];
+    dotnet ef database update
 
-show tables;
+dotnet ef database update  takes our migration file and applies it to the database, performing the actual creation of the tables. 
 
-https://www.farces.com/wrestling-with-the-mysql-8-0-11-bear/
+The name of the tables we create is determined by the name we give to their corresponding  DbSet  field in our Context class, not the name of the model they correspond to. 
 
-nano /usr/local/etc/my.cnf
+(Convention dictates that the names of these tables is the plural of your Model.)
 
-### Disable default caching_sha2_password
-default-authentication-plugin=mysql_native_password
+### A couple notes on troubleshooting:
 
-mysql -u root -p
+If you change your database significantly, it's possible that you'll receive errors when you try to run your updates. 
 
-ALTER USER 'root'@'localhost'
-  IDENTIFIED WITH mysql_native_password
-  BY 'root';
+If you're having trouble, a guaranteed solution is to drop your tables, delete all of your migrations, and generate a new migration. 
 
-exit
+You will lose all of your data, but this will solve any migration conflicts you may have.
 
-brew services restart mysql
+If you receive an error that your build failed when adding your migrations, you can try running your command again with a -v at the end.
 
-mkdir FirstCSharp
-cd FirstCSharp
-dotnet new console
+This stands for "verbose" mode, and will give you a detailed rundown of what went wrong in your migration, including where the problem was!
+
+### Next Steps
+Consider utilizing some other tech available to you in the .NET ecosystem, to better separate your work from the pack.  These are just a few additional framework tools/libraries that you could consider to use:
+
+Identity Framework
+
+TDD
+
+Memcache
+
+Unity
+
+Project Guideline
+
+Refer to this Project Guideline for additional project ideas, as well as some ways to think about what you want to include to maximize the impact your projects will have.
