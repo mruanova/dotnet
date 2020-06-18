@@ -15,14 +15,19 @@
 ## Code First Database Creation
 
 Up until now, we've had to manually create our databases to match our models. 
+
 But Entity Framework provides us with a tool that allows us to create database tables directly from our models! 
+
 EF can read our model files to create "migrations", files that contain instructions for the database to create or modify tables.
 
 ### Migrations
 Migrations are an extremely powerful tool for interacting with your database.  
+
 Any time we change our models we can create new migrations to update the database accordingly, but be warned, you may have to delete your existing table data if it doesn't conform to the new model structure.
 
-Migrations are created using the Entity Framework command line tools. From the console we can create migrations like so:
+Migrations are created using the Entity Framework command line tools. 
+
+From the console we can create migrations like so:
 
     dotnet ef migrations add YourMigrationName
 
@@ -54,8 +59,7 @@ If you receive an error that your build failed when adding your migrations, you 
 
 This stands for "verbose" mode, and will give you a detailed rundown of what went wrong in your migration, including where the problem was!
 
-### Next Steps
-Consider utilizing some other tech available to you in the .NET ecosystem, to better separate your work from the pack.  These are just a few additional framework tools/libraries that you could consider to use:
+### Next 
 
 Identity Framework
 
@@ -64,7 +68,3 @@ TDD
 Memcache
 
 Unity
-
-Project Guideline
-
-Refer to this Project Guideline for additional project ideas, as well as some ways to think about what you want to include to maximize the impact your projects will have.

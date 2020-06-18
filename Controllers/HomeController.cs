@@ -23,6 +23,45 @@ namespace MauDotNetCore.Controllers
 
         public IActionResult Index()
         {
+            string[] fruits = { "apple", "banana", "mango", "orange", "passionfruit", "grape" };
+            var query = fruits.Select((fruit, index) => new
+            {
+                index,
+                str = fruit.Substring(0, index)
+            });
+            foreach (var obj in query)
+            {
+                Console.WriteLine("{0}", obj);
+            }
+            /*
+             This code produces the following output:
+             {index=0, str=}
+             {index=1, str=b}
+             {index=2, str=ma}
+             {index=3, str=ora}
+             {index=4, str=pass}
+             {index=5, str=grape}
+            */
+
+            IEnumerable<int> squares = Enumerable.Range(1, 10).Select(x => x * x);
+            foreach (int num in squares)
+            {
+                Console.WriteLine(num);
+            }
+            /*
+             This code produces the following output:
+             1
+             4
+             9
+             16
+             25
+             36
+             49
+             64
+             81
+             100
+            */
+            
             // Get all Users
             List<User> AllUsers = dbContext.Users.ToList();
             Console.WriteLine(AllUsers);
@@ -37,7 +76,7 @@ namespace MauDotNetCore.Controllers
                 .Take(5)
                 .ToList();
             Console.WriteLine(MostRecent);
-            
+
             // email
             User oneUser = dbContext.Users.FirstOrDefault(user => user.Email == "mau@rua.com");
             Console.WriteLine(oneUser);
