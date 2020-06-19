@@ -63,6 +63,8 @@ This stands for "verbose" mode, and will give you a detailed rundown of what wen
 
 Identity Framework
 
+    dotnet add package Microsoft.EntityFrameworkCore
+
 TDD
 
 Memcache

@@ -8,11 +8,13 @@ using Microsoft.Extensions.Logging;
 using MauDotNetCore.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Net.Http;
 
 namespace MauDotNetCore.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly HttpClient _httpClient = new HttpClient();
         private readonly ILogger<HomeController> _logger;
         private MauContext dbContext;
         public HomeController(ILogger<HomeController> logger, MauContext context)
@@ -61,7 +63,7 @@ namespace MauDotNetCore.Controllers
              81
              100
             */
-            
+
             // Get all Users
             List<User> AllUsers = dbContext.Users.ToList();
             Console.WriteLine(AllUsers);
@@ -81,7 +83,25 @@ namespace MauDotNetCore.Controllers
             User oneUser = dbContext.Users.FirstOrDefault(user => user.Email == "mau@rua.com");
             Console.WriteLine(oneUser);
 
+            // var stringData = await _httpClient.GetStringAsync(URL);
+
             return View();
+        }
+        
+        // public async Task<int> GetDotNetCount()
+        [HttpGet, Route("projects")]
+        public async void GetProjects()
+        {
+            // Suspends GetDotNetCount() to allow the caller (the web server)
+            // to accept another request, rather than blocking on this one.
+            string URL ="https://246gg84zg8.execute-api.us-west-2.amazonaws.com/prod/projects";
+            var html = await _httpClient.GetStringAsync(URL);
+            // return Regex.Matches(html, @"\.NET").Count;
+            /*
+            await Task.WhenAny	Task.WaitAny	Waiting for any task to complete
+            await Task.WhenAll	Task.WaitAll	Waiting for all tasks to complete
+            await Task.Delay	Thread.Sleep	Waiting for a period of time
+            */
         }
 
         [HttpGet]
