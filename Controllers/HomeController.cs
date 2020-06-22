@@ -209,7 +209,7 @@ namespace MauDotNetCore.Controllers
             return View();
         }
 
-        [HttpGet("{personId}")]
+        [HttpGet("person/{personId}")]
         public IActionResult Show(int personId)
         {
             var personWithSubsAndMags = dbContext.Persons

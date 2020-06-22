@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "User Details Page";
+}
+
+<partial name="NavPartial"/>
+
+@model User
+<p>@Model.UserId</p>
+<p>@Model.FirstName</p>
+<p>@Model.LastName</p>
+<p>@Model.Email</p>
+<p>@Model.CreatedAt</p>
+<p>@Model.UpdatedAt</p>
