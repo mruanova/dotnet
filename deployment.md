@@ -131,6 +131,8 @@ It will ask you if you want to verify the host, just type yes.
 
     ssh -i YOUR_PEM_NAME.pem ubuntu@YOUR_PUBLIC_DNS
 
+    ssh -i myfirstinstance.pem ubuntu@ec2-34-222-101-90.us-west-2.compute.amazonaws.com
+
 ## Install
 Remember when we had to install a bunch of stuff to set up our development environment on our computer? 
 
