@@ -1,0 +1,18 @@
+dot net c#/.net core
+
+mkdir FirstCSharp
+cd FirstCSharp
+dotnet new console
+
+or
+dotnet new console -o FirstCSharp
+
+dotnet restore
+
+dotnet run
+
+cd ..
+mkdir ConsoleApp1
+cd ConsoleApp1
+dotnet new console
+dotnet run
